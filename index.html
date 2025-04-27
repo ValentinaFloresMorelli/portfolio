@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Section</title>
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+
+ <style>
+    body {
+      padding-top: 56px;
+      background-color: #f7e7eb;
+      font-family: 'Dancing Script', cursive;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      background-color: #4d4d4d !important;
+    }
+
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+      color: 	#f7e7eb !important;
+      font-size: 1.4rem;
+    }
+
+    .navbar .nav-link:hover {
+      color: 	#f7e7eb !important;
+    }
+
+    @media (max-width: 992px) {
+      .navbar-collapse {
+        background-color: #4d4d4d ;
+      }
+    }
+
+    /* About Section */
+    .about-section {
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .about-section p {
+     font-size: 1.15rem;
+     }
+
+    .about-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #6c6c6c;
+    }
+
+    .about-section img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .about-section p {
+      color: #333;
+    }
+
+    .about-section .card-body {
+     display: block; 
+     text-align: justify; 
+    }
+
+
+    /* Projects Section */
+
+    .projects-section .card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .projects-section h2 {
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      color:#4d4d4d;
+    }
+
+    .card {
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-img-top {
+      max-height: 180px;
+      object-fit: cover;
+    }
+
+    .card-body {  
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-title {
+      font-size: 1.3rem;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    .card-text {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    .card-body .btn {
+     align-self: left;
+    }
+
+    .projects-section .card-text {
+     font-size: 1.1rem
+    }
+
+    /* Skills Section */
+    .skills-section h2 {
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      color:#4d4d4d;
+    }
+
+    .skills-section .card {
+     display: flex;
+     flex-direction: column;
+     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+     height: 100%;
+    }
+    
+
+    .skills-section .card-img-top {
+      padding: 20px;
+      background-color: #f7e7eb;
+      height: 180px;
+      object-fit: contain;
+    }
+
+    .skills-section .card-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 15px;
+    }
+
+    .skills-section .card-text {
+      font-size: 1.1rem;
+      flex-grow: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .skills-section .card-title {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .btn-custom {
+     background-color: #bfbfbf;
+     color: #4d4d4d;
+     border: none;
+    }
+
+    .btn-custom:hover {
+     background-color: #bfbfbf;
+     color: #4d4d4d;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      padding: 50px 0;
+      background-color: #4d4d4d;
+      color: #f7e7eb;
+    }
+
+    .contact-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .contact-section p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .social-icon {
+      display: block;
+      margin: 0 auto 10px;
+      width: 60px;
+      height: auto;
+    }
+
+    .social-icon:hover {
+      opacity: 0.7;
+    }
+
+    .contact-section a {
+      color: #bfbfbf;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .contact-section a:hover {
+      color: #f7e7eb;
+    }
+
+    .social-link {
+     color:  #f7e7eb;
+     text-decoration: none;
+     font-size: 1.2rem;
+     display: block;
+     text-align: center;
+    }
+
+    .social-link:hover {
+     text-decoration: underline;
+    }
+
+    .contact-icons {
+     justify-content: center;
+    }
+
+    .mt-custom-kaggle {
+     margin-top: 20px;
+    }
+
+
+
+
+  </style>
+</head>
+          
+    <body>
+      <section id="about" class="about-section">
+        <div class="container">
+          <h2 class="text-center mb-4">about</h2>
+          <div class="card mb-4 overflow-hidden p-4">
+            <div class="card-body">
+              <img src="eu2.jpg" class="img-fluid float-left mr-3 mb-3" style="width: 200px; height: auto; object-fit: cover; border-radius: 8px;">
+              <p class="card-text mb-2">
+                Hello! And welcome to my portfolio!
+              </p>
+              <p class="card-text mb-2"> 
+                It was created with great care and dedication, and it is constantly updated as I complete new projects.
+              </p>
+              <p class="card-text mb-2">
+                A little about me: my name is Valentina. Of my 24 years of life, I spent 7 working in the tourism restoration sector. It was an incredible experience that not only gave me a career, but also took me to some of the most breathtaking places on Earth—and even gave me a great love story. However, that chapter came to an end, and it was time for change. I decided to ground myself and take a brave step: going back to study. This time, I chose something I had never imagined doing, but that had always piqued my curiosity—something that matches who I truly am.
+              </p>
+              <p class="card-text mb-2">
+                After a lot of research, the Professional Data Analytics Certificate seemed like the right and most complete way to start this new journey. Through it, I gained solid knowledge in areas like data cleaning, data visualization, and tools such as SQL, R programming, Tableau, and Power BI. Along with my diploma, a capstone project, and several other projects that you’ll find here, I am now eager and fully prepared to secure my first opportunity as a data analyst.
+              </p>
+              <p class="card-text mb-2">
+                I speak multiple languages, and you can find more details about my skills and experiences in my CV attached  <a href="ValentinaCVing.pdf" target="_blank">here</a>. Feel free to explore my work — I would be thrilled to hear from you! It was a pleasure to share a little bit of my story. ✨
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section" style= "background-color: #f7e7eb">
+      <div class="container">
+        <h2 class="text-center">projects</h2>
+        <div class="row">
+          <!-- Cyclistic -->
+          <div class="col-md-4 mb-4 d-flex align-items-stretch">
+            <div class="card">
+              <img src="images/bike.jpg" class="card-img-top" alt="Project 1">
+              <div class="card-body">
+                <h5 class="card-title">Cyclistic Project</h5>
+                <p class="card-text">Made to conclude the Professional Certificate, this case study was a simulation of a complete business case. At this project you can find all the steps of a data analysis focused on a marketing campaign .  </p>
+                <a href="https://drive.google.com/drive/folders/1-6WfGSZEeDxL9jaSXDDGRlNORLZ7lRa4?usp=drive_link" class="btn btn-custom">Report</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="col-md-4 mb-4 d-flex align-items-stretch">
+            <div class="card">
+              <img src="images/covid.png" class="card-img-top" alt="Project 2">
+              <div class="card-body">
+                <h5 class="card-title">Exploring Covid19 worldwide dataset</h5>
+                <p class="card-text">The analysis used two tables — deaths and vaccinations — to examine the lethality of the disease over time, evaluate its impact across countries, and calculate the cumulative percentage of the vaccinated population.</p>
+                <a href="https://www.kaggle.com/datasets/valentinafloresm/covid19" class="btn btn-custom">Script</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="col-md-4 mb-4 d-flex align-items-stretch">
+            <div class="card">
+              <img src="images/penguins.jpg" class="card-img-top" alt="Project 3">
+              <div class="card-body">
+                <h5 class="card-title">Penguins visualizations with R</h5>
+                <p class="card-text">Using the famous "penguins" package this Notebook explains how to create visualizations in R. Therefore, it is also possible to discover some curiosities from penguin species comparison. </p>
+                <a href="https://www.kaggle.com/code/valentinafloresm/penguins-visualizations-using-r" class="btn btn-custom">Notebook</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- Skills Section -->
+  <section id="skills" class="skills-section" style="background-color: #f7e7eb;">
+    <div class="container">
+      <h2 class="text-center">skills</h2>
+    <div class="row align-items-stretch">
+
+      <!-- Skill 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card d-flex flex-column h-100">
+          <img src="icons/Google_SheetsLogo.svg" class="card-img-top" alt="Spreadsheets">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Spreadsheets</h5>
+            <p class="card-text">Ability to clean, organize and analyze data efficiently. Using tables, applying functions, conditional formatting, pivot tables and charts to support decision-making processes.</p>
+            <div class="mt-auto">
+              <a href="https://drive.google.com/drive/folders/1S73pzmGRBBBHBOKFR12eYUN4h5rrUzAG?usp=drive_link" class="btn btn-custom btn-block">Folder</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card d-flex flex-column h-100">
+          <img src="icons/viz.png" class="card-img-top" alt="Data Visualization">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Data Visualization</h5>
+            <p class="card-text">Creation of clear and compelling visualizations that transform complex datasets into intuitive dashboards. Data Storytelling walks side by side with tools like Tableau and Power BI to highlight key insights and convince the audience.</p>
+            <div class="mt-auto">
+                <a href="https://public.tableau.com/app/profile/valentina.flores" class="btn btn-custom btn-block text-center">Tableau</a>
+            </div>
+          </div>
+        </div>  
+      </div>
+
+      <!-- Skill 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card d-flex flex-column h-100">
+          <img src="icons/sqlpng.png" class="card-img-top" alt="SQL">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">SQL</h5>
+            <p class="card-text">I can write structured queries to clean, extract, filter and combine data from relational databases. SQL assist my exploratory analysis and report accuracy.</p>
+            <div class="mt-auto">
+              <a href="https://www.kaggle.com/datasets/valentinafloresm/restaurant-orders" class="btn btn-custom btn-block">Restaurant Orders Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card d-flex flex-column h-100">
+          <img src="icons/r.png" class="card-img-top" alt="R Programming">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">R Programming Language</h5>
+            <p class="card-text">Capacity to use this language to apply analytical techniques and build visual narratives with packages like tidyverse, dplyr, and ggplot2 to uncover patterns.</p>
+            <div class="mt-auto">
+              <a href="https://www.kaggle.com/code/valentinafloresm/penguins-visualizations-using-r" class="btn btn-custom btn-block" >R Notebook</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+    <!-- Contact Me Section -->
+    <section id="contact" class="contact-section text-center" style="color: #f7e7eb; background-color: #4d4d4d;">
+      <div class="container">
+        <h2>contact me</h2>
+        <div class="row contact-icons">
+          <div class="col-6 col-md-3 col-lg-2 mb-4 mt-custom-kaggle">
+            <a href="https://www.kaggle.com/valentinafloresm" target="_blank" class="social-link">
+              <img src="icons/kaggle.png" alt="Kaggle" class="social-icon">
+              valentinafloresm
+            </a>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-4">
+            <a href="https://www.linkedin.com/in/valentina-floresmorelli" target="_blank" class="social-link">
+              <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon">
+              valentina flores
+            </a>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-4">
+            <a href="mailto:valentefloral@gmail.com" class="social-link">
+              <img src="icons/gmail.png" alt="Gmail" class="social-icon">
+              valentefloral@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #f7e7eb;">
+      <div class="container">
+        <a class="navbar-brand" href="#home">portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home"> - home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"> - about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects"> - projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills"> - skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"> - contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+    <!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
